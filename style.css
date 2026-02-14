@@ -137,3 +137,73 @@ display: inline-block;
     background-color: rgba(255,240,240,0.5);
     border-radius: 12px;
 }
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+    body {
+        height: 100vh;
+        overflow: hidden;
+    }
+
+    #envelope {
+        width: 120px;
+    }
+
+    .letter-window {
+        width: 95vw;
+        max-width: 100%;
+        aspect-ratio: auto;
+        height: auto;
+        max-height: calc(100vh - 20px);
+        padding: 20px 20px 20px 20px;
+        gap: 15px;
+        padding-top: 80px;
+        overflow-y: auto;
+        transform: scale(1);
+        background-size: cover;
+    }
+
+    .letter-window.open {
+        transform: scale(1);
+    }
+
+    h1 {
+        font-size: 18px;
+        margin: 0;
+    }
+
+    p {
+        font-size: 20px;
+    }
+
+    .cat {
+        width: 150px;
+        margin: 5px 0;
+    }
+
+    .letter-window.final .cat {
+        width: 120px;
+    }
+
+    .buttons {
+        gap: 15px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .btn {
+        width: 80px;
+    }
+
+    .yes-btn,
+    .no-btn {
+        width: 80px;
+        height: auto;
+    }
+
+    .final-text {
+        font-size: 16px;
+        padding: 8px 15px;
+        max-width: 90vw;
+    }
+}
